@@ -98,6 +98,30 @@ module.exports = function(grunt){
                 files:['./src/scripts/main.js'],
                 tasks:['replace:dev']
             }
+        },
+        imagemin:{
+            dev:{
+                options:{
+                    optimizationLevel:3,
+                },
+                files: {
+                    'dev/img/facebook.png': 'src/img/facebook.png',
+                    'dev/img/instagram.png': 'src/img/instagram.png',
+                    'dev/img/linkedin.png': 'src/img/linkedin.png',
+                    'dev/img/twitter.png': 'src/img/twitter.png',
+                }
+            },
+            dist:{
+                options:{
+                    optimizationLevel:3,
+                },
+                files: {
+                    'dist/img/facebook.png': 'src/img/facebook.png',
+                    'dist/img/instagram.png': 'src/img/instagram.png',
+                    'dist/img/linkedin.png': 'src/img/linkedin.png',
+                    'dist/img/twitter.png': 'src/img/twitter.png',
+                }
+            }
         }
 
     })
@@ -108,7 +132,8 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-replace')
     grunt.loadNpmTasks('grunt-contrib-clean')
     grunt.loadNpmTasks('grunt-contrib-uglify')
+    grunt.loadNpmTasks('grunt-contrib-imagemin')
 
     grunt.registerTask('default',['watch'])
-    grunt.registerTask('build',['less:dist','uglify:target','replace:dist','htmlmin:dist','clean'])
+    grunt.registerTask('build',['less:dist','uglify:target','replace:dist','htmlmin:dist','clean','imagemin:dist'])
 }
