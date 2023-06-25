@@ -8,13 +8,13 @@
     <title>Cursos online com Certificado ---</title>
 </head>
 <body>
-    <header class="navbar-expand pb-2 pt-2 sticky-top">
+    <header id="cabecalho" class="navbar-expand-lg pb-2 pt-2 sticky-top">
         <div class="navbar">
             <div class="container">
                 <a href="#">
                     <img src="https://ebaconline.com.br/_nuxt/d58908d198123d3c50c18638f58abb26.svg" alt="">
                 </a>
-                <nav class="collapse navbar-collapse">
+                <nav id="menu" class="collapse navbar-collapse">
                     <ul class="nav nav-pills fs-6">
                         <li class="nav-item">
                             <a href="#" class="nav-link active">CURSOS</a>
@@ -36,6 +36,9 @@
                         </li>
                     </ul>
                 </nav>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#menu" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
     </header>
@@ -208,9 +211,9 @@
                     <p class="fs-4 text-center mb-5 w-70">Cadastre-se no nosso mailing e receba, em primeira mão, novidades sobre os cursos online, convites para eventos e webinars gratuitos.</p>
                     <form action="" class="form">
                         <div class="lado">
-                            <input type="text" name="" id="" placeholder="Nome" class="form-control lado__item">
-                            <input type="tel" name="" id="" placeholder="+55 (99)99999-9999" class="form-control lado__item">
-                            <input type="email" name="" id="" placeholder="email@example.com" class="form-control lado__baixo">
+                            <input type="text" require name="" id="" placeholder="Nome" class="form-control lado__item">
+                            <input type="tel" required name="" id="" placeholder="+55 (99)99999-9999" class="form-control lado__item">
+                            <input type="email" required name="" id="" placeholder="email@example.com" class="form-control lado__baixo">
                         </div>
                         <button class="btn btn-send fw-bold mt-5 mb-5" type="button">Enviar</button>
                     </form>
@@ -218,10 +221,10 @@
             </div>
         </div>
     </section>
-    <footer class="rodape">
+    <footer class="rodape pb-5">
         <div class="container pt-5">
-            <div class="row bb-1">
-                <div class="col-4 col-lg-3 pb-5">
+            <div class="row bb-1 pb-5">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="rodape__menu">
                         <img class="rodape__menu--logo" src="https://ebaconline.com.br/_nuxt/617c9af18c932da87a64cc1b3d65e0fa.svg" alt="">
                         <div class="pt-4 pb-4">
@@ -237,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <h5 class="fw-bold c-w">ÁREAS</h5>
                     <div>
                         <a class="d-block fs-5 link" href="">Design</a>
@@ -250,7 +253,7 @@
                         <a class="d-block fs-5 link" href="">Fashion</a>
                     </div>
                 </div>
-                <div class="col-4 col-lg-3 d-flex flex-column">
+                <div class="col-6 col-md-4 col-lg-3 d-flex flex-column">
                     <div class="pb-5">
                         <h5 class="fw-bold c-w">PROJETOS</h5>
                         <div>
@@ -267,11 +270,47 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <h5 class="fw-bold c-w">PARA EMPRESAS</h5>
                     <div>
                         <a class="d-block fs-5 link" href="">Educação corporativa</a>
                         <a class="d-block fs-5 link" href="">Atração de Talentos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 d-flex mb-5-lg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <p class="fs-5 c-w m-0">Whatsapp</p>
+                                <p class="fs-5 fw-bold m-0"><a class="link" href="">+55 (11) 4200-2991</a></p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="fs-5 c-w m-0">Telefone</p>
+                                <p class="fs-5 fw-bold m-0"><a class="link" href="">+55 (11) 3030-3200</a></p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="fs-5 c-w m-0">E-mail</p>
+                                <p class="fs-5 fw-bold m-0"><a class="link" href="">tallyson.eu@outlook.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contatos d-flex justify-content-center">
+                        <a class="contatos__item link me-3 mt-2" href="#">
+                            <img class="contatos__item--icon" src="img/facebook.png" alt="">
+                        </a>
+                        <a class="contatos__item link me-3 mt-2" href="#">
+                            <img class="contatos__item--icon" src="img/instagram.png" alt="">
+                        </a>
+                        <a class="contatos__item link me-3 mt-2" href="#">
+                            <img class="contatos__item--icon" src="img/linkedin.png" alt="">
+                        </a>
+                        <a class="contatos__item link me-3 mt-2" href="#">
+                            <img class="contatos__item--icon" src="img/twitter.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
