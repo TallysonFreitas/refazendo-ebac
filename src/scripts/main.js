@@ -1,4 +1,6 @@
-for(let i = 0; i < 60; i++){
+const item = document.getElementsByClassName('animation')
+
+for(let i = 0; i < item.length; i++){
     const a = document.getElementsByClassName('animation')[i]
     const b = document.getElementsByClassName('animation__item')[i]
     a.addEventListener('mouseenter',function () {  
